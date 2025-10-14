@@ -3,145 +3,119 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Priyam Das — PhD student |Type Ia Supernova Remnants | Integral Field Spectroscopy | UNSW Canberra</title>
-<meta name="description" content="Priyam Das — PhD student at UNSW Canberra. Research: Type Ia supernova remnants, MUSE, ejecta morphology, ML for spectra." />
+<title>Priyam Das — Astrophysicist | UNSW Canberra</title>
+<meta name="description" content="PhD student at UNSW Canberra studying Type Ia supernova remnants using MUSE and HST." />
 
 <style>
-  /* Simple responsive, print-friendly styles — no external deps */
-  :root{
-    --bg:#0b1020; --card:#0f1724; --muted:#9aa3b2; --accent:#8ab4ff; --glass: rgba(255,255,255,0.03);
-    --radius:14px;
-  }
-  *{box-sizing:border-box}
-  body{
-    margin:0;
-    font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    background:
-      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-      url('background.jpg') center/cover no-repeat fixed;
-    color:#e6eef8;
-    line-height:1.45;
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #e6eef8;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), 
+                url('background.jpg') center/cover fixed no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-  .wrap{max-width:980px;margin:28px auto;padding:22px}
-  header{display:flex;gap:18px;align-items:center}
-  .photo{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#132033,#0f1a2b);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
-  h1{margin:0;font-size:1.6rem}
-  .tag{color:var(--muted);margin-top:6px;font-size:0.95rem}
-  .row{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
-  @media (max-width:880px){ .row{grid-template-columns:1fr} .meta{order:2} .main{order:1} .photo{width:96px;height:96px} }
-  .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:16px;border-radius:var(--radius); box-shadow:0 6px 20px rgba(0,0,0,0.45); border:1px solid rgba(255,255,255,0.03)}
-  .muted{color:var(--muted)}
-  a{color:var(--accent); text-decoration: none}
-  a.underline{text-decoration: underline}
-  ul{margin:0;padding-left:1.05rem}
-  li{margin:6px 0}
-  .social{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-  .pill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:0.9rem;border:1px solid rgba(255,255,255,0.03)}
-  h2{margin:0 0 10px 0;font-size:1.15rem}
-  .project{margin-bottom:10px}
-  footer{margin-top:18px;color:var(--muted);font-size:0.9rem;text-align:center;padding-bottom:18px}
-  .label{display:block;color:var(--muted);font-size:0.85rem;margin-bottom:6px}
-  .small{font-size:0.92rem;color:var(--muted)}
-  .press{font-size:0.95rem}
-  .bullet{margin:10px 0 16px}
-  .contact a{display:inline-block;margin-right:8px}
-  /* print */
-  @media print{
-    body{background:white;color:black}
-    .card{background:white;border:1px solid #ddd;box-shadow:none}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  nav a {
+    color: #e6eef8;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+
+  nav a:hover { opacity: 0.7; }
+
+  main {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  main img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid rgba(255,255,255,0.4);
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #d5d9e1;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #a3aab7;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 600px) {
+    nav a { margin-left: 12px; font-size: 0.95rem; }
+    h2 { font-size: 1.5rem; }
   }
 </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <!-- Replace the inner text with an <img src="headshot.jpg" ...> after you upload your photo (see instructions). -->
-      <img src="headshot.jpg" alt="Priyam Das" class="photo" style="object-fit:cover;">
-      <div>
-        <h1>Priyam Das</h1>
-        <div class="tag">PhD student | Supernova Remnants | MUSE | UNSW Canberra</div>
-        <div class="small muted">Canberra, Australia</div>
+  <header>
+    <h1>Priyam Das</h1>
+    <nav>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="CV_PriyamDas.pdf" target="_blank">CV</a>
+    </nav>
+  </header>
 
-        <div class="social">
-          <a class="pill" href="https://github.com/Pdas888" target="_blank" rel="noopener">GitHub: Pdas888</a>
-          <a class="pill" href="https://orcid.org/0000-0002-5483-0232" target="_blank" rel="noopener">ORCID</a>
-          <a class="pill" href="https://scholar.google.com/citations?user=NzW2gpcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="pill" href="mailto:priyam.das@unsw.edu.au">Email</a>
-        </div>
-      </div>
-    </header>
+  <main>
+    <img src="headshot.jpg" alt="Priyam Das" />
+    <h2>PhD student | Supernova Remnants | UNSW Canberra</h2>
+    <p>
+      I am an astrophysicist studying Type Ia supernova remnants using optical integral-field spectroscopy 
+      (MUSE at the VLT and HST imaging). My research focuses on the structure of the reverse-shocked ejecta, 
+      element stratification, and the connection between observed morphologies and explosion physics.
+    </p>
+    <p>
+      I develop machine learning frameworks to classify and reconstruct 3D spectral structures, and work on 
+      bridging observations with hydrodynamic models of white dwarf explosions. 
+      My goal is to reveal the physical conditions and origins of Type Ia supernovae.
+    </p>
+  </main>
 
-    <div class="row" style="margin-top:18px">
-      <!-- Main column -->
-      <div class="main">
-        <section class="card">
-          <h2>About</h2>
-          <p class="muted">PhD student at UNSW Canberra focused on integral-field spectroscopy of Type Ia supernova remnants. I perform supernova remnant tomography to study ejecta morphology and shock diagnostics, match them with 3D hydrodynamical models to find out the explosion mechanism and progenitor systems.</p>
-        </section>
-
-        <section class="card" style="margin-top:14px">
-          <h2>Research highlights</h2>
-          <ul class="bullet">
-            <li><strong>Calcium as a fingerprint of double detonation.</strong> Discovered a double-shell [Ca XV] structure in SNR 0509–67.5 using deep MUSE — first photographic evidence linking morphology to a sub-Chandrasekhar double-detonation (Nature Astronomy / press coverage).</li>
-            <li><strong>Helium diagnostics in Type Ia remnants.</strong> First detection of broad & narrow He I and He II across three LMC remnants using archival MUSE; developed diagnostics to constrain pre-shock neutral He fractions (paper in progress).</li>
-            <li><strong>Machine learning for 3D reconstruction.</strong> A supervised ML pipeline to detect and fit broad emission in tens of thousands of MUSE spectra enabling automated 3D kinematic mapping.</li>
-          </ul>
-        </section>
-
-        <section class="card" style="margin-top:14px">
-          <h2 id="projects">Selected projects</h2>
-          <div class="project"><strong>Double-shell [Ca XV] analysis</strong><div class="muted">MUSE mapping of Ca & S ejecta; morphological evidence for double-detonation.</div></div>
-          <div class="project"><strong>Spectral ML classifier</strong><div class="muted">CNN + Gaussian decomposition to detect broad peaks and regress peak positions from ~90k spectra.</div></div>
-        </section>
-
-        <section class="card" style="margin-top:14px">
-          <h2 id="publications">Publications & submitted</h2>
-          <ol>
-            <li><strong>Das, Seitenzahl, Ruiter et al. (2025)</strong>. Calcium in a supernova remnant as a fingerprint of a sub-Chandrasekhar-mass explosion. <em>Nature Astronomy</em>. (cover/press).</li>
-            <li class="muted"><strong>Was SNR 0509-67.5 the result of a double detonation?</strong> Mandal, Ghavamian, Das et al. (2025). <a href="https://arxiv.org/abs/2509.02422" target="_blank" rel="noopener" class="underline">arXiv:2509.02422</a></li>
-            <li class="muted"><strong>Das & Kalam (2022)</strong>. Wormhole in the Milky Way galaxy with global monopole charge. EPJC.</li>
-          </ol>
-        </section>
-
-        <section class="card" style="margin-top:14px">
-          <h2 id="talks">Talks & workshops</h2>
-          <ul>
-            <li>One hundred years of supernova science — Sweden, 2025 (contrib.)</li>
-            <li>HITS Winter Workshop — Heidelberg, 2024 (contrib.)</li>
-            <li>ANITA summer school — Australia, 2024 (contrib.)</li>
-          </ul>
-        </section>
-
-        <section class="card" style="margin-top:14px">
-          <h2>Press & outreach</h2>
-          <p class="press muted">Press coverage (ESO, Reuters, Forbes, etc.) for the double-detonation image release (July 2025). Altmetric ~807.</p>
-        </section>
-      </div>
-
-      <!-- Side column -->
-      <aside class="meta">
-        <div class="card">
-          <div class="label">Education & career</div>
-          <div class="small"><strong>PhD</strong> — The University of New South Wales, Canberra (04/2023 – ongoing). Thesis: Integral field spectroscopy of Type Ia supernova remnants.</div>
-          <div style="height:8px"></div>
-          <div class="small"><strong>M.Sc</strong> — Applied Physics, Amity University Kolkata (08/2019 – 08/2021).</div>
-        </div>
-
-        <div class="card" style="margin-top:12px">
-          <div class="label">Contact</div>
-          <div class="contact small">
-            <a href="mailto:priyam.das@unsw.edu.au" class="underline">priyam.das@unsw.edu.au</a><br>
-            <a href="https://orcid.org/0000-0002-5483-0232" target="_blank" rel="noopener" class="underline">ORCID</a><br>
-            <a href="https://scholar.google.com/citations?user=NzW2gpcAAAAJ&hl=en" target="_blank" rel="noopener" class="underline">Google Scholar</a>
-          </div>
-        </div>
-
-  </div>
+  <footer>
+    © 2025 Priyam Das · <a href="https://github.com/Pdas888" style="color:#8ab4ff;">github.com/Pdas888</a>
+  </footer>
 </body>
 </html>
-
-
-
-
-
