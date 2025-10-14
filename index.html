@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Priyam Das | UNSW Canberra</title>
-<meta name="description" content="PhD student at UNSW Canberra studying Type Ia supernova remnants." />
+<title>Priyam Das — Astrophysicist | UNSW Canberra</title>
+<meta name="description" content="PhD candidate at UNSW Canberra studying Type Ia supernova remnants using MUSE and HST." />
 
 <style>
   body {
@@ -13,10 +13,7 @@
     color: #e6eef8;
     background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)), 
                 url('background.jpg') center/cover fixed no-repeat;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh;
   }
 
   header {
@@ -24,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 40px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.4);
     backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
@@ -47,44 +44,87 @@
 
   nav a:hover { opacity: 0.7; }
 
-  main {
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-    padding: 40px 20px;
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 60px auto;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    overflow: hidden;
   }
 
-  main img {
-    width: 140px;
-    height: 140px;
+  .left {
+    flex: 1 1 300px;
+    background: rgba(0,0,0,0.55);
+    padding: 40px 30px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .left img {
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.5);
     margin-bottom: 20px;
-    border: 2px solid rgba(255,255,255,0.4);
   }
 
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 12px;
+  .left h2 {
+    margin: 0;
+    font-size: 1.4rem;
   }
 
-  p {
-    font-size: 1.05rem;
-    line-height: 1.6;
+  .left .affiliation {
+    color: #c6ccd8;
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+
+  .left .links a {
+    display: block;
+    color: #8ab4ff;
+    text-decoration: none;
+    margin-top: 8px;
+    font-size: 0.95rem;
+  }
+
+  .left .links a:hover { text-decoration: underline; }
+
+  .right {
+    flex: 2 1 500px;
+    padding: 40px 50px;
+  }
+
+  .right h2 {
+    color: #8ab4ff;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+  }
+
+  .right p {
     color: #d5d9e1;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 1em;
+    text-align: justify;
   }
 
   footer {
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     font-size: 0.9rem;
     color: #a3aab7;
     background: rgba(0, 0, 0, 0.5);
   }
 
-  @media (max-width: 600px) {
-    nav a { margin-left: 12px; font-size: 0.95rem; }
-    h2 { font-size: 1.5rem; }
+  @media (max-width: 800px) {
+    .content { flex-direction: column; margin: 20px; }
+    .left { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .right { padding: 30px; }
   }
 </style>
 </head>
@@ -99,24 +139,50 @@
     </nav>
   </header>
 
-  <main>
-    <img src="headshot.jpg" alt="Priyam Das" />
-    <h2>PhD student | Supernova Remnants | UNSW Canberra</h2>
-    <p>
-      I am a PhD student in observational astrophysics, studying Type Ia supernova remnants using optical integral-field spectroscopy.
-      My research focuses on the structure of the reverse-shocked ejecta, 
-      element stratification, and the connection between observed morphologies and explosion physics.
-    </p>
-    <p>
-      I develop machine learning frameworks to classify and reconstruct 3D spectral structures, and work on 
-      bridging observations with hydrodynamic models of white dwarf explosions. 
-      My goal is to reveal the physical conditions and origins of Type Ia supernovae.
-    </p>
-  </main>
+  <div class="content">
+    <div class="left">
+      <img src="headshot.jpg" alt="Priyam Das">
+      <h2>Priyam Das</h2>
+      <div class="affiliation">PhD Candidate, UNSW Canberra</div>
+      <div class="affiliation">Australia</div>
+      <div class="links">
+        <a href="https://orcid.org/0000-0002-5483-0232" target="_blank">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=NzW2gpcAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>About Me</h2>
+      <p>
+        I am a final-year PhD candidate at <strong>The University of New South Wales</strong>, graduating around mid-2026. 
+        My research focuses on <strong>Type Ia supernova remnants</strong>, combining 
+        <em>optical integral-field spectroscopy</em> and <em>modeling</em> to understand the physical and chemical structure of stellar explosions. 
+        I am working toward solving a long-standing question in stellar astrophysics: 
+        <em>how do carbon–oxygen white dwarfs explode?</em>
+      </p>
+      
+      <p>
+        Beyond my primary research, I am broadly interested in developing Integral Field Sprctroscopic data analysis programs and <strong>observational astronomy</strong>, particularly systems that involve 
+        spectroscopic diagnostics such as <em>pulsar wind nebulae</em> and <em>core-collapse supernova remnants</em>. 
+        I have also explored theoretical aspects of <strong>cosmology</strong>, demonstrating that 
+        dark matter density can stabilize wormhole structures in our galaxy. 
+        Additionally, I study <strong>black hole analogues in Bose–Einstein condensates</strong>, developing toy models to investigate their 
+        properties and <em>Hawking radiation</em>.
+        <p>
+        My research on obtaining the first direct photographic evidence of the 
+        <strong>double-detonation explosion mechanism</strong> in the remnant of 
+        <em>SNR 0509-67.5</em> was highlighted by an 
+        <a href="https://www.eso.org/public/australia/news/eso2511" target="_blank">ESO press release</a> 
+        and covered by major news outlets, resulting in an <strong>Altmetric score of 807</strong>.
+        <p>
+          
+        </p>
+      
+    </div>
+  </div>
 
   <footer>
     © 2025 Priyam Das · <a href="https://github.com/Pdas888" style="color:#8ab4ff;">github.com/Pdas888</a>
   </footer>
 </body>
 </html>
-
