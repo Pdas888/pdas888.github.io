@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Research — Priyam Das</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #e6eef8;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+                url('background.jpg') center/cover fixed no-repeat;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  nav a {
+    color: #e6eef8;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+  }
+  nav a:hover { opacity: 0.7; }
+
+  main {
+    max-width: 850px;
+    margin: 40px auto;
+    background: rgba(0,0,0,0.45);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding-bottom: 6px;
+  }
+
+  h2 {
+    color: #8ab4ff;
+    margin-top: 24px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    color: #d5d9e1;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9rem;
+    color: #a3aab7;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width:600px){
+    nav a { margin-left: 12px; font-size: 0.95rem; }
+    main { margin: 20px; padding: 20px; }
+  }
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>Priyam Das</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="CV_PriyamDas.pdf" target="_blank">CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Research</h1>
+
+    <h2>1. Reverse-shocked ejecta and the double-shell morphology</h2>
+    <p>
+      Using deep <em>MUSE</em> observations of the Type Ia supernova remnant <strong>SNR 0509–67.5</strong>,
+      I discovered a remarkable <strong>double-shell [Ca XV]</strong> structure in the reverse-shocked ejecta.
+      This layered morphology — with sulphur emission enclosed between two calcium shells — 
+      provides the first <strong>photographic evidence</strong> of the <em>double-detonation</em> explosion mechanism.
+      It directly links observed ejecta geometry to theoretical sub-Chandrasekhar explosion models, 
+      marking a significant step in connecting explosion physics to remnant morphology.
+    </p>
+
+    <h2>2. Helium emission lines as diagnostic tools</h2>
+    <p>
+      I identified both broad and narrow <strong>He I and He II</strong> lines across multiple Type Ia remnants in the LMC using archival MUSE data. 
+      This represents the first spatially resolved detection of helium in such environments.
+      By mapping <strong>He/H ratios</strong> across the shock zones, I developed a diagnostic method to 
+      constrain the pre-shock neutral helium fraction — 
+      revealing new information about the circumstellar medium and progenitor system composition.
+    </p>
+
+    <h2>3. Spatially resolved clumps and 3D model comparison</h2>
+    <p>
+      I performed a detailed analysis of <strong>clump substructures</strong> within the reverse-shocked ejecta, 
+      combining imaging and spectroscopy to resolve small-scale density enhancements.
+      These observed clumps were compared with 3D hydrodynamical models 
+      (e.g. from <em>Ferrand et al. 2022</em>), enabling one-to-one matching of the 
+      <strong>observed morphology</strong> with <strong>simulated ejecta distributions</strong>.
+      This work provides new insight into the role of asymmetries, instabilities, and 
+      composition gradients in the shaping of Type Ia remnants.
+    </p>
+
+    <h2>4. Machine-learning tools for spectral decomposition</h2>
+    <p>
+      To efficiently analyze tens of thousands of spectra from MUSE data cubes, 
+      I developed a supervised <strong>machine-learning (ML) framework</strong> capable of 
+      detecting and fitting <strong>broad emission components</strong> automatically.
+      The model classifies spectral profiles and performs Gaussian decomposition, 
+      enabling <strong>3D reconstruction</strong> of the ejecta velocity structure.
+      This ML-based pipeline establishes a reproducible, scalable framework 
+      for studying spectroscopic data in supernova remnants and beyond.
+    </p>
+  </main>
+
+  <footer>
+    © 2025 Priyam Das · <a href="https://github.com/Pdas888" style="color:#8ab4ff;">github.com/Pdas888</a>
+  </footer>
+</body>
+</html>
