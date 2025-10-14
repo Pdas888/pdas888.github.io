@@ -13,7 +13,16 @@
     --radius:14px;
   }
   *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,var(--bg),#07101a);color:#e6eef8;line-height:1.45}
+  body{
+    margin:0;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+      url('background.jpg') center/cover no-repeat fixed;
+    color:#e6eef8;
+    line-height:1.45;
+  }
+
   .wrap{max-width:980px;margin:28px auto;padding:22px}
   header{display:flex;gap:18px;align-items:center}
   .photo{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,#132033,#0f1a2b);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
@@ -47,7 +56,7 @@
 <body>
   <div class="wrap">
     <header>
-      <!-- Replace the inner text with an <img src="headshot.JPG" ...> after you upload your photo (see instructions). -->
+      <!-- Replace the inner text with an <img src="headshot.jpg" ...> after you upload your photo (see instructions). -->
       <div class="photo" id="headshot">Priyam<br>Das</div>
       <div>
         <h1>Priyam Das</h1>
@@ -128,12 +137,6 @@
           </div>
         </div>
 
-        <div class="card" style="margin-top:12px">
-          <div class="label">Notes</div>
-          <div class="small muted">To replace the placeholder headshot: upload your image named <code>headshot.jpg</code> to the repository root and refresh the site. Instructions below.</div>
-        </div>
-      </aside>
-    </div>
 
     <footer>
       Built with ❤️ — Priyam Das · <a href="https://github.com/Pdas888" target="_blank" rel="noopener">github.com/Pdas888</a>
@@ -141,4 +144,5 @@
   </div>
 </body>
 </html>
+
 
